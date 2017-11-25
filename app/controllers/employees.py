@@ -1,7 +1,13 @@
-from app.database import data
-from flask_restful import Resource
+from app.models.employee import Employee
+from flask_restful import Resource, fields, marshal_with
+
+resource_fields = {
+    'id': fields.Integer,
+    'name': fields.String,
+}
 
 
 class Employees(Resource):
+    @marshal_with(resource_fields)
     def get(self):
-        return data['employees']
+        return Employee.query.all()
