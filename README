@@ -1,0 +1,14 @@
+# Case for Lunicore
+
+To get started:
+    - Setup a virtualenv (python3) in venv
+    - Setup database: `venv/bin/python3 database_init.py`
+    - venv/bin/pip install -r requirements.txt
+
+To run:
+    `./start-server`
+
+Todo:
+    - Frontend
+    - Access levels
+    - Registration
