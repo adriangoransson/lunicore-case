@@ -2,11 +2,14 @@
 
 To get started:
     - Setup a virtualenv (python3) in venv
-    - Setup database: `venv/bin/python3 database_init.py`
-    - venv/bin/pip install -r requirements.txt
+        virtualenv -p python3 venv
+    - Install dependencies
+        venv/bin/pip install -r requirements.txt
+    - Setup database
+        venv/bin/python3 database_reset.py
 
 To run:
-    `./start-server`
+    ./start-server
 
 Todo:
     - Frontend
